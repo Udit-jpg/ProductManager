@@ -1,0 +1,20 @@
+MVN env
+
+$env:PATH = 'C:\apache-maven-3.9.11-bin\apache-maven-3.9.11\bin;' + $env:PATH; mvn -v
+
+Services first - 
+
+cd "C:\Users\uudit\Downloads\Product Manager\User\demo"
+mvn spring-boot:run
+
+cd "C:\Users\uudit\Downloads\Product Manager\Product\demo"
+mvn spring-boot:run
+
+cd "C:\Users\uudit\Downloads\Product Manager\Order\demo"
+mvn spring-boot:run
+
+cd "C:\Users\uudit\Downloads\Product Manager\Payment\demo"
+mvn spring-boot:run
+
+cd "C:\Users\uudit\Downloads\Product Manager\managerapp"
+npm start
