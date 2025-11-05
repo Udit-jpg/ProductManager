@@ -16,7 +16,7 @@ pipeline {
         GIT_REPO = 'https://github.com/Udit-jpg/ProductManager.git'
         
         // Email configuration
-        EMAIL_RECIPIENTS = 'udit.upadhyay067@somaiya.edu'
+        EMAIL_RECIPIENTS = 'udit.upadhyay067@nmims.in'
         
         // Build timestamp
         BUILD_TIMESTAMP = new Date().format('yyyy-MM-dd HH:mm:ss')
