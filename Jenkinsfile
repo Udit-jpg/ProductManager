@@ -32,12 +32,12 @@ pipeline {
                 }
                 checkout scm
                 script {
-                    env.GIT_COMMIT_MSG = sh(
-                        script: 'git log -1 --pretty=%B',
+                    env.GIT_COMMIT_MSG = bat(
+                        script: '@git log -1 --pretty=%B',
                         returnStdout: true
                     ).trim()
-                    env.GIT_AUTHOR = sh(
-                        script: 'git log -1 --pretty=%an',
+                    env.GIT_AUTHOR = bat(
+                        script: '@git log -1 --pretty=%an',
                         returnStdout: true
                     ).trim()
                 }
