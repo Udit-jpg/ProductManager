@@ -59,7 +59,7 @@ java -jar jenkins.war
 
 ### Access Jenkins
 
-1. Open browser: `http://localhost:8080`
+1. Open browser: `http://localhost:9090`
 2. Get initial admin password:
    ```powershell
    Get-Content C:\Users\<your-username>\.jenkins\secrets\initialAdminPassword
@@ -163,7 +163,7 @@ Default Recipients: your-email@gmail.com
 2. Click **Settings → Webhooks → Add webhook**
 3. Configure:
    ```
-   Payload URL: http://<your-jenkins-server>:8080/github-webhook/
+   Payload URL: http://<your-jenkins-server>:9090/github-webhook/
    Content type: application/json
    Secret: (leave empty or set a secret)
    
@@ -345,8 +345,8 @@ Services Built:
 ✓ Payment Service (8084)
 ✓ React Frontend (3000)
 
-View Build Details: http://localhost:8080/job/ProductManager-Pipeline/42/
-View Build Report: http://localhost:8080/job/ProductManager-Pipeline/42/Build_Report/
+View Build Details: http://localhost:9090/job/ProductManager-Pipeline/42/
+View Build Report: http://localhost:9090/job/ProductManager-Pipeline/42/Build_Report/
 ```
 
 ---
@@ -500,7 +500,7 @@ stage('SonarQube Analysis') {
 1. Check Jenkins URL is accessible from internet
 2. Use ngrok for local testing:
    ```powershell
-   ngrok http 8080
+   ngrok http 9090
    ```
 3. Update webhook URL with ngrok URL
 

@@ -79,7 +79,7 @@ Write-Host "   Run the downloaded .msi file" -ForegroundColor Cyan
 Write-Host ""
 
 Write-Host "Step 3: Access Jenkins" -ForegroundColor Green
-Write-Host "   URL: http://localhost:8080" -ForegroundColor Cyan
+Write-Host "   URL: http://localhost:9090" -ForegroundColor Cyan
 Write-Host ""
 
 Write-Host "Step 4: Get Initial Admin Password" -ForegroundColor Green
